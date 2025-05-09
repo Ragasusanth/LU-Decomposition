@@ -10,13 +10,29 @@ To write a program to find the LU Decomposition of a matrix.
 ## (i) To find the L and U matrix
 
 ## Algorithm
-### Step 1: Import the necessary libraries (NumPy and LU from SciPy).
+### Step 1: Start the Program
 
-### Step 2: Get the input matrix from the user.
+### Step 2: numpy for matrix creation and handling.
 
-### Step 3: Use the lu() function to perform LU Decomposition and obtain P, L, and U matrices.
+### Step 3: scipy.linalg.lu for LU decomposition.
 
-### Step 4: Print the L (Lower triangular) and U (Upper triangular) matrices.
+### Step 4: Input the Matrix
+
+### Step 5: Take the square matrix A as input.
+
+### Step 6: Use eval(input()) to allow entry in Python list format (e.g., [[2,3],[4,5]]).
+
+### Step 7: Use lu(A) from SciPy which returns:
+
+P: Permutation matrix (accounting for row swaps),
+
+L: Lower triangular matrix with 1s on the diagonal,
+
+U: Upper triangular matrix.
+
+### Step 8: Print the Lower triangular matrix (L).
+
+### Step 9: Print the Upper triangular matrix (U).
 
 ## Program:
 
@@ -38,14 +54,25 @@ print(U)
 
 ## Algorithm
 
-### Step 1: Import NumPy and required LU functions from SciPy.
+### Step 1: Start the Program
 
-### Step 2: Input the coefficient matrix A and the constant matrix B.
+### Step 2: numpy for matrix input and handling.
 
-### Step 3: Use lu_factor() to decompose matrix A into LU form.
+### Step 3: lu_factor and lu_solve from scipy.linalg for LU decomposition and solving.
 
-### Step 4: Use lu_solve() with the LU decomposition to find and print the solution vector X.
+### Step 4: Input the coefficient matrix A (square matrix).
 
+### Step 5: Input the right-hand side vector or matrix B.
+
+### Step 6: Use lu_factor(A) to compute:
+
+LU: combined LU decomposition matrix,
+
+PV: pivot indices for row permutations.
+
+### Step 7: Use lu_solve((PV, LU), B) to solve the system Ax = B.
+
+### Step 8: Output the result vector x which solves Ax = B.
 ```
 '''Program to solve a matrix using LU decomposition.
 Developed by: RAGA SUSANTH   
@@ -66,7 +93,8 @@ print(result)
 
 (i) To find the L and U matrix
 
-![image](https://github.com/user-attachments/assets/5f28d90d-ea2f-4048-801e-b9cba3cb30cf)
+
+![image](https://github.com/user-attachments/assets/5e6d3141-eed5-4147-aaaf-c6c7effe5920)
 
 (ii) To find the LU Decomposition of a matrix
 
